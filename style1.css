@@ -1,3 +1,72 @@
 @charset "utf-8";
 /* CSS Document */
+.navbar{
+	width: 100%;
+	background-color: #3ECCC9;
+	overflow:auto
+}
 
+.navbar a {
+	float: left;
+	text-align: center;
+	padding: 12px;
+	color:#0A0A0A;
+	text-decoration: none;
+	font-size:17px;
+}
+
+.navbar a:hover{
+	color:#7c7c7c;
+}
+
+.active {
+	background-color:#1A7674
+}
+
+@media screen and (max-width: 500px) {
+	.navbar a {
+		float:none;
+		display: block;
+	}
+	
+	
+}
+
+.wrapper {
+display: flex;
+	flex-flow: row wrap;
+	
+}
+
+.wrapper> * {
+	padding: 20 px;
+		margin: 20px;
+	flex: 1 100%;
+		border-radius: 20px;
+}
+
+.footer{
+	text-align: center;
+height: 20px;
+}
+
+.header{
+	flex: 1 1 70%;
+	
+height:120 px;
+}
+
+.main1 {
+	align-content: flex-start;
+		flex: 1 1 70%;
+}
+
+.aside1 {
+	text-align: right;
+flex: 1 1 30%;
+}
+
+.secondary1{
+	text-align: right;
+flex: 1 1 30%
+}
