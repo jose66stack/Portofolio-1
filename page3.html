@@ -12,47 +12,50 @@
 	
 
 <body>
+	<script>
+	function myFunction() {
+		var x = document.getElementById("mynav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "mynav"
+		}
+	}
 	
-	<div class="navbar">
+	</script>
+	<div class="navbar" id="mynav">
 		<a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
 	<a href="page1.html"><i class="fa-solid fa-file">Content</i></a>
 		<a href="page2.html"><i class="fa-solid fa-file">Blog</i></a>
 		<a class="active" href="page3.html"><i class="fa-solid fa-file">About</i></a>
 		<a href="page4.html"><i class="fa-solid fa-file">Contact</i></a>
-		
+		<a href="javascript:void(0);" class="icon" onClick="myFunction()"></a>
 		
 		
 	</div>
 	
-	<div class="wrapper">
-	<header class="header">
-		
-<h1>About Me</h1>
-		</header>
-	
-		
-		<article class="main4">
-		<img src="" alt="">
-		
-		</article>
-		
-		<article class="secondary4">
-		<p>
-			
-			bhjbjbmjbmbjmbjhmbjbmhjvhmvhnvhjvjvn.
-			
-			
-			
-			</p>
-		</article>
-	
-	<aside class="aside aside 1">
-		<h1>Logo</h1>
-		
-		</aside>
-		
 	
 	
+	<div class="header">	
+<h4 style="color: whitesmoke">About Me</h4>
+		<hr size="24" width="100%" color="#D43545">
+	</div>
+	<div class="flex-container3">
+	<div id="example">
+		<div class="sectionL3"><img src="images/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg" alt="description" id="image4" style="width:500px;height: 600px width:100%;"></div>
+		</div>
+	<div class="stack3 sectionR3">
+			<div style="flex: 50%"></div>
+			<div>
+		<p4>
+			Hi my name is Jose, my biggest change for the year was graduating from High School and ending a chapter in my life that shows that hard work pays off. And I know I have more freedom, and I'm still adapting to learn more about coding in the future.
+				</p4>
+		
+		</div>
+			
+	
+		
+		</div>
 	</div>
 </body>
 </html>

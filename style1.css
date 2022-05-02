@@ -1,9 +1,21 @@
 @charset "utf-8";
 /* CSS Document */
+
+.header {
+	text-align: center;
+	padding-top: 30px;
+	
+}
+
+
 .navbar{
 	width: 100%;
 	background-color: #3ECCC9;
-	overflow:auto
+	overflow:auto;
+		float: right;
+transition: top 0.3;
+	position: fixed;
+	border-radius: 50px;
 }
 
 .navbar a {
@@ -13,6 +25,8 @@
 	color:#0A0A0A;
 	text-decoration: none;
 	font-size:17px;
+	
+	
 }
 
 .navbar a:hover{
@@ -23,14 +37,123 @@
 	background-color:#1A7674
 }
 
-@media screen and (max-width: 500px) {
-	.navbar a {
-		float:none;
-		display: block;
+.navbar .icon{
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon{
+		float: right;
+			display: block;
+	}
 	}
 	
+@media screen and (max-width: 600px) {
+	.navbar.responsive {position: relative}
+	.navbar.responsive a.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
 	
 }
+	
+	
+.form1 {
+	padding: 0px 600px 8000px;
+	max-width: 600px;
+	margin: 25px 25px 4000px 400px;
+}
+	
+	.header a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	
+	.header-right {
+		float: none;
+	}
+
+
+html1, body1 {
+	height: 100%;
+		padding: o;
+	margin: 0;
+}
+body{
+	
+			
+			width: 100%;
+			background: linear-gradient(#7C7C7C,#0A0A0A,#D43545,#0A0A0A);
+			
+
+		
+}
+
+h1{font-family: bely, serif;
+font-style: bold;
+	font-size: 90px;
+	text-align: center;
+margin-top: 60px;
+}
+
+h3{font-family: bely, serif;
+font-style: bold;
+	font-size: 90px;
+	text-align: center;
+margin-top: 60px;
+}
+
+h4{font-family: bely, serif;
+font-style: bold;
+	font-size: 90px;
+	text-align: center;
+margin-top: 60px;
+}
+
+h5{font-family: bely, serif;
+font-style: bold;
+	font-size: 90px;
+	text-align: center;
+margin-top: 60px;
+}
+p1{font-family: bely, serif;
+	font-style: normal;
+	font-size: 30px;
+	text-align: justify;
+}
+
+p2{font-family: bely, serif;
+	font-style: normal;
+	font-size: 30px;
+	text-align: justify;
+}
+p3{font-family: bely, serif;
+	font-style: normal;
+	font-size: 30px;
+	text-align: justify;
+}
+	p4{font-family: bely, serif;
+	font-style: normal;
+	font-size: 30px;
+	text-align: justify;
+}
+
+
+	
+	
+	
+
+
+
 
 .wrapper {
 display: flex;
@@ -50,23 +173,134 @@ display: flex;
 height: 20px;
 }
 
-.header{
-	flex: 1 1 70%;
-	
-height:120 px;
+
+
+
+#example img{
+	float: left;
+	margin: 60px 60px;
+	border-radius: 50px;
 }
 
-.main1 {
-	align-content: flex-start;
-		flex: 1 1 70%;
+
+
+
+
+.flex-container{
+	display: flex;
 }
 
-.aside1 {
-	text-align: right;
-flex: 1 1 30%;
+.flex-container>div {
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
 }
 
-.secondary1{
-	text-align: right;
-flex: 1 1 30%
+.stack>div{
+	flex-direction: column;
+		padding: 20px;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.sectionL {
+	flex-grow: 3;
+}
+
+.sectionR {
+	flex-grow: 2;
+}
+
+
+.flex-container1{
+	display: flex;
+}
+
+.flex-container1>div {
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.stack1>div{
+	flex-direction: column;
+		padding: 20px;
+}
+
+#container1 {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.sectionL1 {
+	flex-grow: 3;
+}
+
+.sectionR1 {
+	flex-grow: 2;
+}
+
+
+
+.flex-container3{
+	display: flex;
+}
+
+.flex-container3>div {
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.stack3>div{
+	flex-direction: column;
+		padding: 20px;
+}
+
+#container3 {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.sectionL3 {
+	flex-grow: 3;
+}
+
+.sectionR3 {
+	flex-grow: 2;
+}
+
+
+
+
+
+.flex-container4{
+	display: flex;
+}
+
+.flex-container4>div {
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+}
+
+.stack4>div{
+	flex-direction: column;
+		padding: 20px;
+}
+
+#container4 {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.sectionL4 {
+	flex-grow: 2;
+}
+
+.sectionR4 {
+	flex-grow: 3;
 }
